@@ -3204,6 +3204,13 @@ a {
     body {
         margin: 0;
         padding: 0;
+    }
+
+    html {
+        background: #e4a0a5;
+    }
+
+    body {
         background: #ffffff;
     }
 
@@ -3211,8 +3218,8 @@ a {
         top: 0;
         left: 0;
         right: 0;
-
         padding-top: env(safe-area-inset-top);
+        background: rgba(228, 160, 165, 0.85);
     }
 
     .hero {
