@@ -3198,3 +3198,16 @@ a {
         padding-top: 45px;
     }
 }
+/* Убираем белую полосу сверху на мобильных */
+@media (max-width: 640px) {
+    html,
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .header {
+        top: 0 !important;
+        margin-top: 0 !important;
+    }
+}
