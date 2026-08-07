@@ -473,7 +473,7 @@ a {
 .directions,
 .brands,
 .contacts {
-    padding: 110px 0;
+    padding: 40px 0;
 }
 
 .catalog {
@@ -3219,10 +3219,69 @@ a {
         left: 0;
         right: 0;
         padding-top: env(safe-area-inset-top);
-        background: rgba(228, 160, 165, 0.85);
+        background: transparent;
     }
 
     .hero {
         padding-top: calc(110px + env(safe-area-inset-top));
     }
 }
+
+/* =========================================
+   DESKTOP HERO — выравнивание как на макете
+   Мобильную версию не затрагивает
+========================================= */
+@media (min-width: 641px) {
+
+    /* Левый и правый блоки начинаются на одном уровне */
+    .hero-container {
+        align-items: start;
+    }
+
+    /* Левая колонка поднимается вверх вместе с правой */
+    .hero-content {
+        align-self: start;
+    }
+
+    /* На ПК убираем две старые кнопки слева.
+       На мобильной они остаются без изменений. */
+    .hero-buttons {
+        display: none;
+    }
+
+    /* Правая колонка больше не центрируется по высоте */
+    .hero-visual {
+        min-height: 0;
+        justify-content: flex-start;
+        gap: 14px;
+    }
+
+    /* Более компактный блок из трёх белых карточек */
+    .hero-quick-grid {
+        gap: 12px;
+    }
+
+    .hero-quick-card {
+        min-height: 82px;
+        padding: 14px 20px;
+        gap: 14px;
+        border-radius: 18px;
+    }
+
+    .hero-quick-card img {
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        border-radius: 13px;
+    }
+
+    .hero-quick-card strong {
+        margin-bottom: 4px;
+        font-size: 16px;
+    }
+
+    .hero-quick-card span {
+        font-size: 13px;
+    }
+}
+
