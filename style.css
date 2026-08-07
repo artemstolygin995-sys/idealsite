@@ -3198,16 +3198,24 @@ a {
         padding-top: 45px;
     }
 }
-/* Убираем белую полосу сверху на мобильных */
 @media (max-width: 640px) {
+
     html,
     body {
-        margin: 0 !important;
-        padding: 0 !important;
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
     }
 
     .header {
-        top: 0 !important;
-        margin-top: 0 !important;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        padding-top: env(safe-area-inset-top);
+    }
+
+    .hero {
+        padding-top: calc(110px + env(safe-area-inset-top));
     }
 }
