@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" role="img" aria-label="HENKEL">
+  <rect width="320" height="100" fill="white"/>
+  <text x="160" y="58" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="34" font-weight="700"
+        fill="#555">HENKEL</text>
+</svg>
